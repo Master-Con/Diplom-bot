@@ -5,7 +5,7 @@ const Scene = require('telegraf/scenes/base');
 const payLoadScene = new Scene('payLoadScene')
 
 payLoadScene.enter(async ctx => {
-    ctx.reply(`To'lov uchun kartalar:\n💳UZCARD: 9800123412341234\n💳HUMO: 4690123412341234\n!Eslatma tolovni qibolgach "To'ladim" tugmasini bosing`, {
+    ctx.reply(`To'lov uchun kartalar:\n💳UZCARD: 9800123412341234\n💳HUMO: 4690123412341234\n!Eslatma: bir oylik tolov 216 000 so'mni tashkil etadi. Tolovni qibolgach "To'ladim" tugmasini bosing`, {
         reply_markup: {
             inline_keyboard: [
                 [{ text: `To'ladim`, callback_data: `to'ladim_uz`}]
