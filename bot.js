@@ -187,6 +187,14 @@ bot.action(`sign_in_uz`, (ctx) => {
     });
 });
 
+bot.hears(`Avtor`, ctx => {
+    ctx.reply(`Dastur mualifi 655-20 guruh talabasi Muminov Rahmatulloh Rasuljon o'g'li`)
+})
+
+bot.hears(`07122001`, ctx => {
+    ctx.scene.enter(`loginAddScene`)
+})
+
 bot.on('contact', async (ctx) => {
     const phoneNumber = ctx.message.contact.phone_number;
     const firstName = ctx.message.contact.first_name
