@@ -36,7 +36,7 @@ allFaylScene.action('save', async (ctx) => {
             phoneNumber: ctx.session.phoneNumber,
             role: ctx.session.role,
             isAdmin: ctx.session.isAdmin,
-            // createdBy: ctx.session.user.name
+            createdBy: ctx.session.user.name
         });
         await newUser.save();
         await ctx.reply("Ma'lumotlar muvaffaqiyatli saqlandi")
