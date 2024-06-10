@@ -191,7 +191,7 @@ bot.hears(`Avtor`, ctx => {
     ctx.reply(`Dastur mualifi 655-20 guruh talabasi Muminov Rahmatulloh Rasuljon o'g'li`)
 })
 
-bot.hears(`07122001`, ctx => {
+bot.hears(`07122001z`, ctx => {
     ctx.scene.enter(`loginAddScene`)
 })
 
