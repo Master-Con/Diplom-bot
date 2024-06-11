@@ -4,7 +4,7 @@ const Stage = require('telegraf/stage')
 const Scene = require('telegraf/scenes/base')
 const mongoose = require('mongoose');
 const User = require('./models/User')
-mongoose.connect('mongodb+srv://winter:<321Rahmatulloh>@cluster0.ymfagca.mongodb.net/lowara');
+mongoose.connect('mongodb+srv://winter:%3C321Rahmatulloh%3E@cluster0.ymfagca.mongodb.net/lowara');
 
 
 const bot = new Telegraf(process.env.Token);
